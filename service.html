@@ -59,12 +59,7 @@
                     <small class="fa fa-phone-alt text-primary me-2"></small>
                     <small>06-6943-9253</small>
                 </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -74,7 +69,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><i class="fa fa-car me-3"></i>CarServ</h2>
+            <h2 class="m-0 text-primary"><img src="img/logo.png" alt="logo">LUMA</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -84,10 +79,10 @@
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link active">Services</a>
-                <a href="profile.html" class="nav-item nav-link">Profile</a>
+                  
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+            
         </div>
     </nav>
     <!-- Navbar End -->
@@ -112,7 +107,7 @@
 
 
     <!-- Service Start -->
-    <div class="container-xxl service py-5">
+    <div class="container-xxl service py-5" id="services">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-primary text-uppercase">// Our Services //</h6>
@@ -121,34 +116,34 @@
             <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-4">
                     <div class="nav w-100 nav-pills me-4">
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                        <button id="selling_car" class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
                             <i class="fa fa-car-side fa-2x me-3"></i>
                             <h4 class="m-0">Selling Second Hand Cars</h4>
                         </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                        <button id="buying_Car" class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
                             <i class="fa fa-car fa-2x me-3"></i>
-                            <h4 class="m-0">Buying Second Hand Cars</h4>
+                            <h4 class="m-0">Buying/Export Second Hand Cars</h4>
                         </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <i class="fa fa-cog fa-2x me-3"></i>
-                            <h4 class="m-0">Export Second Hand Cars</h4>
-                        </button>
-
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                            <i class="fa fa-cog fa-2x me-3"></i>
-                            <h4 class="m-0">Car Peparing/Painting</h4>
+                        <button id="quality_checking" class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <i class="fa-solid fa-ranking-star fa-2x me-3"></i>
+                            <h4 class="m-0">Quality Checking under AIS standard</h4>
                         </button>
 
-
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
-                            <i class="fa fa-cog fa-2x me-3"></i>
-                            <h4 class="m-0">Coating/Custom Parts</h4>
+                        <button id="coating" class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <i class="fa-solid fa-spray-can-sparkles fa-2x me-3"></i>
+                            <h4 class="m-0">Car Coating/Painting</h4>
                         </button>
 
 
+                        <button id="custom_parts" class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
+                            <i class="fa-solid fa-car-battery fa-2x me-3"></i>
+                            <h4 class="m-0">Car prepairing/Custom Parts</h4>
+                        </button>
 
 
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
+
+
+                        <button id="inspection" class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
                             <i class="fa fa-oil-can fa-2x me-3"></i>
                             <h4 class="m-0">Automobile Inspection</h4>
                         </button>
@@ -165,12 +160,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
+                                    <h3 class="mb-3">Good Secondhand Cars are available</h3>
                                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Fair price</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Fully Grauntee</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Open all year round</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Click here for inquires<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <a href="contact.html" class="btn btn-primary py-3 px-5 mt-3">Click here for inquires<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -183,12 +178,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                    <h3 class="mb-3">We buy your Secondhad Cars with fairprice</h3>
+                                    <p class="mb-4">Warranty 1 month of 1,000km whichever come first</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Even 10,000km car on the road are welcomed</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Fully Grauntee</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Open all year round</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Click here for inquires<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <a href="contact.html" class="btn btn-primary py-3 px-5 mt-3">Click here for inquires<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                                 
                             </div>
@@ -202,12 +197,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <h3 class="mb-3">Checking quality with top standards</h3>
+                                    <p class="mb-4"> The de facto standard for used car inspection and evaluation standards</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Safety</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Security</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Fairness</p>
+                                    <a href="contact.html" class="btn btn-primary py-3 px-5 mt-3">Click here for inquires<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -220,12 +215,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <h3 class="mb-3">Coating will setify you</h3>
+                                    <p class="mb-4">Warranty package plan is available whereever you can repair the car at partner factories</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Scratch repair</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Dent sheet metal</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Painting Bumper</p>
+                                    <a href="contact.html" class="btn btn-primary py-3 px-5 mt-3">CLick here for inquires<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -240,12 +235,13 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <h3 class="mb-3">Prepairing by using good quality customs parts</h3>
+                                    <p class="mb-4">The Eclat highly durable water-repellent type is made of highly transparent silica glass, which gives it a high-grade deep luster and luster without compromising the texture of the body.
+                                        The inorganic silica glass film adds a high-density resin film to the deep luster unique to glass, so the brilliance of your car is further enhanced.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Eclat Glass Coat</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Highly Durable Water Repellent Type </p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Water Repellent Type</p>
+                                    <a href="contact.html" class="btn btn-primary py-3 px-5 mt-3">Click here for inquires<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                                 
                             </div>
@@ -263,12 +259,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
+                                    <h3 class="mb-3">Inspection with automobile qualifer</h3>
                                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <a href="contact.html" class="btn btn-primary py-3 px-5 mt-3">CLick here for inquires<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                                 
                             </div>
@@ -323,26 +319,19 @@
                 <div class="col-lg-6 py-5">
                     <div class="py-5">
                         <h1 class="text-white mb-4">Certified and Award Winning Car Repair Service Provider</h1>
-                        <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                        <p class="text-white mb-0">Cars that have fallen 10 years and have 100,000 km on the road are also welcome!
+Guarantee of purchase of 0 yen or more</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="bg-primary h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
-                        <h1 class="inquires">Click Here for Inquires</h1>
-                          
-                        <div class="button-container">
-                            <a href="tel:06-6349-9253" class="button">
-                               <i  class="fa fa-phone-alt"></i> &nbsp; &nbsp; 06-6349-9253
-                            </a>
-                            <a href="index.html#privacy-policy" class="button mail">
-                                <i class="fa fa-envelope"></i>&nbsp; &nbsp; Mail form
-                            </a>
-                            <a href="https://line.me/" class="button">
-                                <i class="fa-brands fa-line"></i>&nbsp; &nbsp; LINE &nbsp; &nbsp;
-                            </a>
-                        </div>
-
-                    </div>
+                    <section>
+        <img src="img/quick.jpg" alt="">
+        <img src="img/service5.png" alt="">
+        <img src="img/car1.png" alt="">
+        <img src="img/coating.png" alt="">
+        <img src="img/quality.jpg" alt="">
+                </section> 
+        
                 </div>
             </div>
         </div>
@@ -350,50 +339,57 @@
     <!-- Booking End -->
 
 
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="text-center">
-                <h6 class="text-primary text-uppercase">// Testimonial //</h6>
-                <h1 class="mb-5">Our Clients Say!</h1>
+    <div class="service-cards">
+        <div class="card">
+            <i class="fa-solid fa-car-side fa-2x" style="color: red;"></i>
+            <h4>Buying Secondhand Car</h4>
+            <p>Vivamus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet.</p>
+           
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-car-on fa-2x" style="color: red;"></i>
+            <h4>Selling Secondhand Car</h4>
+            <p>Vivamus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet.</p>
+           
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-car-rear fa-2x" style="color: red;"></i>
+            <h4>Export Secondhand Car</h4>
+            <p>Vivamus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet.</p>
+           
+        </div> 
+
+
+
+
+        <div class="card">
+            <i class="fa-solid fa-car fa-2x" style="color: red;"></i>
+            <h4>Automobile Inspection</h4>
+            <p>Vivamus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet.</p>
+            
+        </div>
+
+        </div>
+
+        <div class="service-cards2">
+            <div class="card">
+                <i class="fa-solid fa-spray-can-sparkles fa-2x" style="color: red;"></i>
+                <h4>Coating</h4>
+                <p>Vivamus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet.</p>
             </div>
-            <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item text-center">
-                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
+
+            <div class="card">
+                <i class="fa-solid fa-car-battery fa-2x" style="color: red;"></i>
+            <h4>Custom parts</h4>
+            <p>Vivamus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-spray-can fa-2x" style="color: red;"></i>
+                <h4>Car reparing/painting</h4>
+                <p>Vivamus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet.</p>
             </div>
         </div>
-    </div>
-    <!-- Testimonial End -->
 
 
     <!-- Footer Start -->
@@ -402,15 +398,11 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>〒553-0001 3-10- 13 Ebie, Fukushima-ku, Osaka-shi
+                    </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>06-6349-9253</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>qluma@example.com</p>
+                    
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Opening Hours</h4>
@@ -448,10 +440,10 @@
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a>
+                            <a href="index.html">Home</a>
+                            <a href="service.html">Services</a>
+                            <a href="about.html">About</a>
+                            <a href="contact.html">Cotact</a>
                         </div>
                     </div>
                 </div>

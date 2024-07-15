@@ -3,7 +3,7 @@
 
 
 :root {
-    --primary: #FC6736;
+    --primary: red;
     --secondary: #0B2154;
     --light: #F2F2F2;
     --dark: #111111;
@@ -26,7 +26,7 @@
 
 
 #spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    transition: opacity  ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
 }
@@ -274,40 +274,6 @@
 
 
 /*** Testimonial ***/
-.testimonial-carousel .owl-item .testimonial-text,
-.testimonial-carousel .owl-item.center .testimonial-text * {
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-text {
-    background: var(--primary) !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-text * {
-    color: #FFFFFF !important;
-}
-
-.testimonial-carousel .owl-dots {
-    margin-top: 24px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #CCCCCC;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dot.active {
-    background: var(--primary);
-    border-color: var(--primary);
-}
 
 
 /*** Footer ***/
@@ -411,23 +377,29 @@
     padding-top: 4%;
     font-size: 20px;
    text-align: justify;
-    font-family: 'Roboto', sans-serif;
+    
     margin-left: 53%;
-    color:#2c2c2c
+    
+}
+
+.profile-info{
+    margin-left: 53%;
 }
 
 section{
     display:flex;
     width: 500px;
-    height: 250px;
+    height: 350px;
     padding-left: 5%;
+    padding-top: 10%;
+    
 }
 
 section img{
     width: 0px;
     flex-grow: 1;
     object-fit:cover;
-    opacity: .5;
+    
     transition: .5s ease;
     border-radius:20px;
     margin:1%;
@@ -439,40 +411,6 @@ section img:hover{
     filter:contrast(#CCCCCC)
 }
 
-
-table.company-info {
-    width: 80%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-table.company-info th,
-table.company-info td {
-    padding: 15px;
-    text-align: left;
-    border: 1px solid #ddd;
-}
-
-table.company-info th {
-    background-color: #FC6736;
-    color: white;
-    width: 20%;
-}
-
-table.company-info td {
-    width: 80%;
-}
-
-table.company-info a {
-    color: #004a87;
-    text-decoration: none;
-}
-
-table.company-info a:hover {
-    text-decoration: underline;
-}
 
 
 
@@ -633,9 +571,9 @@ body {
 
 
 .ps-4 p{
-    font-size: 20px;
-    color: #e94560;
-    font-family: "Bona Nova Sc",serif;
+   color: #004a87;
+   font-weight: 200; 
+   
 }
 
 .button-container {
@@ -763,6 +701,261 @@ body {
          
          
        }
+     .logo_qluma{
+                 height: 10px;
+             }
+
+
+
+
+        
+             .service-cards {
+                display: flex;
+                gap: 20px;
+            }
             
+
+
+            .service-cards2 {
+                display: flex;
+                gap: 20px;
+                
+            }
+
+            .card {
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                width: 250px;
+                margin-left: 7%;
+               
+            }
+
+        .service-cards2 .card{
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+            margin-left: 13%;
+            margin-top: 3%;
+        }
+
+
+           
+            
+            .card img {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .card h3 {
+                font-size: 1.5em;
+                color: #333333;
+                margin: 10px 0;
+            }
+            
+            .card p {
+                font-size: 1em;
+                color: #777777;
+                margin: 10px 0;
+            }
+            
+            .card a {
+                text-decoration: none;
+                color: #e74c3c;
+                font-weight: bold;
+            }
+            
+            .card a span {
+                display: inline-block;
+                transition: transform 0.2s;
+            }
+            
+            .card a:hover span {
+                transform: translateX(5px);
+            }
+
+
+
         
-        
+        .container-about {
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+        }
+        .row-about {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+        .row-about img {
+            width: 40%;
+            height: 300px;
+           
+        }
+        .text {
+            padding: 20px;
+            width: 50%;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .text h2, .text h3 {
+            margin: 0;
+            font-size: 24px;
+            color: #0B2154;
+        }
+        .text p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+        .text h3 {
+            text-transform: capitalize;
+        }
+        .text h2::after, .text h3::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #e94560;
+            margin-top: 10px;
+        }
+
+        .about_us{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .about_title{
+            color: red;
+            text-align: center;
+        }
+
+
+
+
+
+
+        .container_benifit {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .container_benifi h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .container_benifi h3 {
+            color: #e94560;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: inline-block;
+            position: relative;
+        }
+        .container_benifi h3::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: #e94560;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .services_benifit {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .service-card {
+            background-color: white;
+            width: 23%;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: transform 0.2s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .service-card img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+        .service-card h4 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .service-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #666;
+        }
+        .see-all-services {
+            margin-top: 20px;
+            text-align: right;
+        }
+        .see-all-services a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 14px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 2px;
+            display: inline-block;
+        }
+
+        .contact_us{
+            text-decoration: none;
+        }
+
+
+
+        .container-gallery {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+       .container-gallery h3{
+        text-align: center;
+        color: #004a87;
+       }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: calc(25% - 10px);
+            height: 200px;
+            object-fit: cover;
+        }
+
+       
+        @media (max-width: 768px) {
+            .gallery img {
+                width: calc(50% - 10px);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery img {
+                width: 100%;
+            }
+        }
+
+
